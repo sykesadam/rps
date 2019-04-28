@@ -1,71 +1,32 @@
-/* sass förfan usch */
 body 
-    padding: 0;
-    margin: 0;
-
+    padding: 0
+    margin: 0
 
 main 
-    display: flex;
-    background: #333;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-
+    display: flex
+    background: #333
+    min-height: 100vh
+    justify-content: center
+    align-items: center
 
 section 
-    display: flex;
-    font-size: 6rem;
-    width: 60vw;
-    padding: 2rem;
-    box-sizing: border-box;
-    justify-content: space-between;
+    display: flex
+    font-size: 6rem
+    width: 60vw
+    padding: 2rem
+    box-sizing: border-box
+    justify-content: space-between
+
+@import "pages/userchoice"
+@import "pages/round"
+@import "animation"
 
 
-.player-choices 
-    opacity: 1;
-    transition: opacity 0.3s ease-out;
 
 
-.player-choices.fade 
-    opacity: 0;
 
 
-.choice 
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s ease-in;
 
 
-.choice.clicked 
-    transform: scale(0.4);
-    opacity: 0;
 
-
-.round 
-
-
-.player-choice 
-    opacity: 0.1;
-    transform: scale(0);
-    animation: fade-in 0.4s ease-in forwards;
-
-
-.cpu-choice 
-    opacity: 0;
-    transform: scale(0);
-    animation: fade-in 0.4s ease-in forwards 0.5s;
-
-
-@keyframes fade-in 
-    0% 
-        opacity: 0;
-        transform: scale(0);
-    
-    80% 
-        transform: scale(1.2);
-    
-    100% 
-        opacity: 1;
-        transform: scale(1);
-    
 

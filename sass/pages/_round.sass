@@ -1,0 +1,23 @@
+.player-choice 
+    opacity: 0
+    transform: scale(0)
+    animation: fade-in 0.4s ease-in forwards
+    transition: background .3s ease-out
+
+.cpu-choice 
+    opacity: 0
+    transform: scale(0)
+    animation: fade-in 0.4s ease-in forwards 0.5s
+
+.player-side 
+    display: flex
+    flex-direction: column
+    a 
+        margin: 1rem auto 0
+        font-size: .7rem
+        color: #fff
+        text-transform: uppercase
+        letter-spacing: 2px
+        text-decoration: none
+        &:hover 
+            text-decoration: underline
